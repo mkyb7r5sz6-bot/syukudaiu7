@@ -139,10 +139,14 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dealer.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Participant.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Shoe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dealer.h" />
     <ClInclude Include="Participant.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Shoe.h" />
