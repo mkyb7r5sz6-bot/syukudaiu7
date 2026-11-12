@@ -3,7 +3,8 @@
 
 #include "Participant.h"
 
-class Player : public Participant {
+class Player : public Participant 
+{
 public:
     void showCard(const char* playerName) const;
 };

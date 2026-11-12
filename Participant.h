@@ -3,7 +3,8 @@
 
 #include "Shoe.h"
 
-class Participant {
+class Participant 
+{
 protected: // 子クラスからアクセスできるようprotectedにする
     int number;
     int suit;

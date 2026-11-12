@@ -8,13 +8,15 @@
 using namespace std;
 
 // Participantクラスのポインタを受け取る通常関数（アップキャストの活用）
-void showParticipantCard(const Participant* p) {
+void showParticipantCard(const Participant* p)
+{
     const char* suitMarks[] = { "ハート", "ダイヤ", "スペード", "クローバー" };
     cout << "[共通関数で確認] 手持ちのカード: "
         << suitMarks[p->getSuit()] << " の " << p->getNumber() << endl;
 }
 
-int main() {
+int main()
+{
     srand(static_cast<unsigned int>(time(0)));
 
     // Shoeを生成（コンストラクタで自動的にシャッフルされる）
@@ -41,13 +43,16 @@ int main() {
     cout << endl;
 
     // 勝敗判定
-    if (player.getNumber() > dealer.getNumber()) {
+    if (player.getNumber() > dealer.getNumber())
+    {
         cout << "【結果】プレイヤー の勝ち！" << endl;
     }
-    else if (player.getNumber() < dealer.getNumber()) {
+    else if (player.getNumber() < dealer.getNumber())
+    {
         cout << "【結果】ディーラー の勝ち！" << endl;
     }
-    else {
+    else 
+    {
         cout << "【結果】引き分け！" << endl;
     }
 

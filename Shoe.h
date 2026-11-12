@@ -1,7 +1,8 @@
 ﻿#ifndef SHOE_H
 #define SHOE_H
 
-class Shoe {
+class Shoe 
+{
 private:
     int deck[52];
     int currentCardIndex;
